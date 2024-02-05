@@ -45,6 +45,83 @@ The GUI should launch, allowing you to:
 3. Select the download folder.
 4. Click the "Download" button to start the download process.
 
+# Dokumentasi dan Penggunaan `CLi-DL.py`
+
+`CLi-DL.py` adalah skrip Python yang memungkinkan pengguna untuk mendownload video dari YouTube dalam berbagai format audio dan video. Skrip ini menggunakan modul `yt_dlp` untuk melakukan proses download.
+
+## Persyaratan
+
+Sebelum menggunakan skrip ini, pastikan Anda telah menginstal modul `yt_dlp` dengan menjalankan perintah berikut:
+
+```bash
+pip install yt-dlp
+```
+
+
+
+## Penggunaan
+
+Skrip ini dapat digunakan dengan dua cara:
+
+1. **Melalui Command Line (Dengan Argumen URL):**
+
+   Anda dapat langsung memberikan URL video YouTube sebagai argumen ketika menjalankan skrip dari command line. Ini memungkinkan Anda untuk memulai proses download tanpa interaksi tambahan.
+
+   Contoh penggunaan:
+
+   ```bash
+   python CLi-DL.py https://www.youtube.com/watch?v=4cdATVG8UbM
+   ```
+
+   
+
+   Setelah menjalankan perintah di atas, skrip akan meminta Anda untuk memilih format download yang diinginkan.
+
+2. **Interaktif (Tanpa Argumen URL):**
+
+   Jika Anda tidak menyertakan URL sebagai argumen, skrip akan meminta Anda untuk memasukkan URL dan memilih format download secara interaktif.
+
+   Contoh penggunaan:
+
+   ```bash
+   python CLi-DL.py
+   ```
+
+   
+
+   Setelah menjalankan perintah di atas, ikuti petunjuk di layar untuk memasukkan URL dan memilih format download.
+
+## Pilihan Format Download
+
+Saat diminta untuk memilih format download, Anda akan diberikan opsi berikut:
+
+```bash
+Pilih format download:
+1. MP4 (video)
+2. WAV (audio)
+3. M4A (audio)
+4. MP3 (audio)
+Masukkan pilihan (1/2/3/4):
+```
+
+
+
+Masukkan angka yang sesuai dengan format yang Anda inginkan dan tekan Enter.
+
+## Keluar dari Skrip
+
+Setelah proses download selesai, skrip akan berhenti. Jika Anda menjalankan skrip secara interaktif, Anda dapat memulai proses download baru dengan menjalankan skrip lagi.
+
+## Catatan
+
+- Pastikan Anda memiliki hak yang sesuai untuk mendownload konten dari YouTube.
+- Kualitas video atau audio yang didownload akan sesuai dengan opsi format yang dipilih dan ketersediaan pada YouTube.
+- Proses download akan menampilkan progress bar di command line untuk memberikan informasi tentang proses download.
+
+Dengan mengikuti dokumentasi dan petunjuk penggunaan ini, Anda seharusnya dapat menggunakan `CLi-DL.py` untuk mendownload video dari YouTube dengan mudah.
+
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or create an issue for any bugs, improvements, or feature requests.
