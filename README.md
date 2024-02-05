@@ -33,6 +33,9 @@ To start the application, run the following command in the terminal:
 python hades_ytDL.py
 ```
 
+```bash
+pyinstaller --onefile --windowed --noconfirm --clean --add-data "./campfire.ico;." --icon=./campfire.ico hades_ytDL.py
+```
 
 
 The GUI should launch, allowing you to:
